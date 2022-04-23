@@ -55,7 +55,7 @@
     var k = url.substr(url.lastIndexOf("k=")+2);
     
     if(k){
-      fetch (AS_URL_BASE+'https://script.google.com/macros/s/AKfycbzMhk2RgzqaZ3fi9Kg3YTXOP3QhlDpVwcjUBp5FjGRVTvGQVm4w6Ylw1L220XVXQFsH/exec = ?k='+k)
+      fetch (AS_URL_BASE+'?k='+k)
       .then(r => r.text())
       .then((r) => {
         console.log(r);
