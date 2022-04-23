@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    head {Accept: text/html
-    Cookie: Version=1
-  }
   <meta charset="utf-8">
   <title></title>
   <style>
@@ -58,7 +55,7 @@
     var k = url.substr(url.lastIndexOf("k=")+2);
     
     if(k){
-      fetch(AS_URL_BASE+'?k='+k)
+      fetch (AS_URL_BASe+'?k='+k)
       .then(r => r.text())
       .then((r) => {
         console.log(r);
